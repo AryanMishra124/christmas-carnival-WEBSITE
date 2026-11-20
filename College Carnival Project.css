@@ -439,17 +439,17 @@ label {
 }
 
 .dance {
-    background-image: url("images/dance.jpg");
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtEF1pRmhZzaXP9CtBzvZD26nSWNXRCbrEYGiO6utBt7BzU6TVS04gwKPn&s=10");
     background-position: center 30%;
 }
 
 .music {
-    background-image: url("images/concert.jpg");
+    background-image: url("https://images.stockcake.com/public/d/3/d/d3dba181-1341-456b-b2c8-cdd2c1df8083_large/vibrant-concert-lights-stockcake.jpg");
     background-position: center bottom;
 }
 
 .games {
-    background-image: url("images/games.jpg");
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR3h57ySunRorSLjVWFm3L-kcAQZCS5JhxwHRXMAxrfn4Yhh44RlcgutF0&s=10");
 }
 
 .two-photos {
@@ -466,11 +466,11 @@ label {
 }
 
 .corndogs {
-    background-image: url("images/corndogs.jpg");
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn4EthZL9AhXJVIWrol9QXyQ1vRKx2GmOkKx4U2AorycHT424_FQ0S7FQ&s=10");
 }
 
 .churros {
-    background-image: url("images/churros.jpg");
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiSWTcccMK9g18dG5phTzGSUKK8MT9tY_WdLiMg6LV-khmxu-cQGp-xRet&s=10");
 }
 
 .christmas-box {
