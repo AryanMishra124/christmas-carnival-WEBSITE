@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Carnival 2026</title>
+
+    <link rel="stylesheet" href="College Carnival Project.css">
+</head>
+
+<body>
+
+    <div class="lights">
+        <span class="bulb red"></span>
+        <span class="bulb yellow"></span>
+        <span class="bulb green"></span>
+        <span class="bulb blue"></span>
+        <span class="bulb red"></span>
+        <span class="bulb yellow"></span>
+        <span class="bulb green"></span>
+        <span class="bulb blue"></span>
+        <span class="bulb red"></span>
+        <span class="bulb yellow"></span>
+        <span class="bulb green"></span>
+        <span class="bulb blue"></span>
+        <span class="bulb red"></span>
+        <span class="bulb yellow"></span>
+        <span class="bulb green"></span>
+        <span class="bulb blue"></span>
+    </div>
+
+    <div id="page1">
+
+        <header class="top-bar">
+            <p>🎄 Christmas Carnival 2026 🎄</p>
+        </header>
+
+        <section class="hero">
+
+            <span class="deco deco1">❄️</span>
+            <span class="deco deco2">⭐</span>
+            <span class="deco deco3">🔔</span>
+            <span class="deco deco4">🎁</span>
+            <span class="deco deco5">🎄</span>
+            <span class="deco deco6">❄️</span>
+
+            <div class="hero-text">
+                <p class="small-title">JOIN THE BIGGEST CELEBRATION OF THE YEAR</p>
+
+                <h1>Christmas Carnival 2026</h1>
+
+                <h2>Organised by Our College</h2>
+
+                <p class="intro">Get ready for four days of music, dance, delicious food, games and festive fun! Meet Santa, win prizes and make memories with your friends. Register now and be a part of the celebration.</p>
+
+                <div class="date-box">
+                    <p class="date-title">📅 CARNIVAL DATES</p>
+                    <p class="dates">24 December - 27 December 2026</p>
+                    <p class="date-time">Opening ceremony on 24 December, 4:00 PM onwards</p>
+                </div>
+
+                <a class="big-button" href="#registration">Register Now</a>
+            </div>
+
+            <div class="hero-image">
+                <img class="poster" src="image copy.png" alt="Christmas Carnival poster" width="420">
+            </div>
+
+        </section>
+
+        <section id="registration" class="form-section">
+
+            <h2 class="section-title">🎁 Register for the Carnival 🎁</h2>
+            <p class="section-text">Fill in your details below. Fields marked with * are required.</p>
+
+            <form id="regForm" class="form-box" onsubmit="return registerNow()">
+
+                <label>Full Name *</label>
+                <input class="box" type="text" id="fullName" placeholder="Enter your full name" required>
+
+                <label>Email Address *</label>
+                <input class="box" type="email" id="email" placeholder="Enter your email" required>
+
+                <label>Mobile Number *</label>
+                <input class="box" type="text" id="mobile" placeholder="10 digit mobile number" required>
+
+                <label>College / Institution Name *</label>
+                <input class="box" type="text" id="college" placeholder="Enter your college name" required>
+
+                <label>Course or Department *</label>
+                <input class="box" type="text" id="course" placeholder="Example: B.Tech Computer Science" required>
+
+                <label>Year of Study *</label>
+                <div class="choices">
+                    <label class="choice"><input type="radio" name="year" required> 1st Year</label>
+                    <label class="choice"><input type="radio" name="year" required> 2nd Year</label>
+                    <label class="choice"><input type="radio" name="year" required> 3rd Year</label>
+                    <label class="choice"><input type="radio" name="year" required> 4th Year</label>
+                </div>
+
+                <label>Gender (optional)</label>
+                <div class="choices">
+                    <label class="choice"><input type="radio" name="gender"> Male</label>
+                    <label class="choice"><input type="radio" name="gender"> Female</label>
+                    <label class="choice"><input type="radio" name="gender"> Other</label>
+                </div>
+
+                <label>Preferred Event or Activity (optional)</label>
+                <div class="choices">
+                    <label class="choice"><input type="radio" name="event"> Dance</label>
+                    <label class="choice"><input type="radio" name="event"> Music</label>
+                    <label class="choice"><input type="radio" name="event"> Food Stalls</label>
+                    <label class="choice"><input type="radio" name="event"> Competitions</label>
+                    <label class="choice"><input type="radio" name="event"> Christmas Celebrations</label>
+                    <label class="choice"><input type="radio" name="event"> Creative Activities</label>
+                </div>
+
+                <p id="errorMessage"></p>
+
+                <input class="submit-button" type="submit" value="🎅 Register Now">
+
+            </form>
+        </section>
+
+    </div>
+
+    <div id="page2">
+
+        <section class="success">
+
+            <span class="deco deco1">🎄</span>
+            <span class="deco deco2">⭐</span>
+            <span class="deco deco3">🎁</span>
+            <span class="deco deco4">🔔</span>
+            <span class="deco deco5">❄️</span>
+            <span class="deco deco6">🎅</span>
+
+            <h1>🎉 Congratulations! You Have Successfully Registered for the Christmas Carnival! 🎉</h1>
+
+            <p id="welcomeName" class="thank-you">Thank you for registering!</p>
+            <p class="thank-text">We are so happy to have you with us. Get ready for four days of joy, music, food and festive fun. Here are your registration details:</p>
+
+            <table class="details">
+                <tr>
+                    <th>Name</th>
+                    <td id="showName"></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td id="showEmail"></td>
+                </tr>
+                <tr>
+                    <th>Mobile</th>
+                    <td id="showMobile"></td>
+                </tr>
+                <tr>
+                    <th>College</th>
+                    <td id="showCollege"></td>
+                </tr>
+                <tr>
+                    <th>Course</th>
+                    <td id="showCourse"></td>
+                </tr>
+            </table>
+
+            <button class="back-button" onclick="goHome()">⬅ Back to Home</button>
+        </section>
+
+        <section class="activities">
+
+            <h2 class="section-title">🎪 Carnival Activities and Events 🎪</h2>
+            <p class="section-text">Here is everything waiting for you at the Christmas Carnival.</p>
+
+            <div class="cards">
+
+                <article class="card red-card">
+                    <div class="card-photo dance"></div>
+                    <div class="card-body">
+                        <h3>💃 Dance Performances</h3>
+                        <p>Live dance performances, group dancing and music. Watch our students light up the stage or join the dance floor yourself!</p>
+                        <p class="info">🕔 Day 1, 5:00 PM | 📍 Main Stage</p>
+                    </div>
+                </article>
+
+                <article class="card green-card">
+                    <div class="card-photo music"></div>
+                    <div class="card-body">
+                        <h3>🎤 Musical Events</h3>
+                        <p>Singing performances, live music and entertainment all evening long. Bring your friends and sing along!</p>
+                        <p class="info">🕕 Day 2, 6:00 PM | 📍 Open Air Stage</p>
+                    </div>
+                </article>
+
+                <article class="card gold-card">
+                    <div class="two-photos">
+                        <div class="half corndogs"></div>
+                        <div class="half churros"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>🍟 Food Stalls</h3>
+                        <p>Different food counters, snacks, desserts and festive treats. From cheesy corn dogs to sweet churros, there is something for everyone.</p>
+                        <p class="info">🕓 Every day, 4:00 PM onwards | 📍 Food Court</p>
+                    </div>
+                </article>
+
+                <article class="card red-card">
+                    <div class="card-photo games"></div>
+                    <div class="card-body">
+                        <h3>🎯 Fun Competitions</h3>
+                        <p>Exciting competitions, carnival games and challenges with lots of prizes and teddy bears to be won.</p>
+                        <p class="info">🕒 Day 3, 3:00 PM | 📍 College Ground</p>
+                    </div>
+                </article>
+
+                <article class="card green-card">
+                    <div class="card-photo christmas-box">🎅 🎄 🎁</div>
+                    <div class="card-body">
+                        <h3>🎅 Christmas Celebrations</h3>
+                        <p>Santa Claus appearances, Christmas decorations, gift activities and festive celebrations for everyone.</p>
+                        <p class="info">🕕 25 December, 6:00 PM | 📍 Main Lawn</p>
+                    </div>
+                </article>
+
+                <article class="card gold-card">
+                    <div class="card-photo creative-box">🎨 📸 ✂️</div>
+                    <div class="card-body">
+                        <h3>🎨 Creative Activities</h3>
+                        <p>Art competitions, photography, decoration competitions and other creative activities for the artist in you.</p>
+                        <p class="info">🕑 Day 4, 2:00 PM | 📍 Art Block</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>❄️ Christmas Carnival 2026 ❄️</p>
+    </footer>
+
+    <script src="College Carnival Project.js"></script>
+</body>
+</html>
